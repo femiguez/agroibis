@@ -7,14 +7,14 @@
 read_crop_parms(file, src.dir = ".", verbose = TRUE)
 }
 \arguments{
-\item{file}{file name}
+\item{file}{file name, should end in .crp}
 
 \item{src.dir}{source directory}
 
 \item{verbose}{whether to print progress messages (default = TRUE)}
 }
 \value{
-list structure with data.frames for different sections of the parameter file
+list structure with matrices for different sections of the parameter file
 }
 \description{
 Read an Agro-IBIS crop parameter file
@@ -22,7 +22,7 @@ Read an Agro-IBIS crop parameter file
 \examples{
 \donttest{
 extd.dir <- system.file("extdata", package = "agroibis")
-cpp <- read_ibis_parms(file = "params_text.crp", src.dir = extd.dir)
+cpp <- read_crop_parms(file = "params_text.crp", src.dir = extd.dir)
 }
 
 }
