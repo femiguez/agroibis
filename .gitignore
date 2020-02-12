@@ -1,0 +1,3 @@
+## Ignore dumb files
+.DS_Store
+./R/.DS_Store
