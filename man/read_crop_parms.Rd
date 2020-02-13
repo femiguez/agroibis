@@ -23,6 +23,8 @@ Read an Agro-IBIS crop parameter file
 \donttest{
 extd.dir <- system.file("extdata", package = "agroibis")
 cpp <- read_crop_parms(file = "params_text.crp", src.dir = extd.dir)
+## Just display the first element (in this case a parameter table) of the list
+cpp[[1]] 
 }
 
 }

@@ -1,9 +1,9 @@
 Package: agroibis
-Version: 0.001
+Version: 0.002
 Authors@R: c(person("Fernando", "Miguez", email = "femiguez@iastate.edu", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-4627-8329")),
              person("Theodore", "Hartman", role = c("aut","ctb")))
 Title: Interaction with Agro-IBIS terrestrial ecosystem model
-Description: Collection of functions for interaction with Agro-IBIS terrestrial ecosystem model
+Description: Collection of functions for interaction with Agro-IBIS terrestrial ecosystem model. At the moment it can read in, edit and write out a crop parameter file.
 Depends: R (>= 3.5.0)
 License: GPL-3
 Encoding: UTF-8

@@ -13,7 +13,9 @@
 #' extd.dir <- system.file("extdata", package = "agroibis")
 #' cpp <- read_crop_parms(file = "params_text.crp", src.dir = extd.dir)
 #' ## Edit it using edit_parms
-#' write_crop_parms(cpp, file = "params_text.crp")
+#' cpp2 <- edit_parms(cpp, table.name = "wheat_growth_control",
+#'                    col = 2, row = 1, value = 0.812)
+#' write_crop_parms(cpp2, file = "params_text.crp")
 #' }
 #' 
 write_crop_parms <- function(crop.parms.lst, 

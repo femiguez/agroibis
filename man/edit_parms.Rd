@@ -18,9 +18,9 @@ edit_parms(crop.parms.lst,
 
 \item{col}{name (or index) of column to edit}
 
-\item{value}{value for replacement}
+\item{row}{name (or index) of row to edit}
 
-\item{rwo}{name (or index) of row to edit}
+\item{value}{value for replacement}
 }
 \value{
 list structure with replaced values
@@ -32,6 +32,10 @@ Edit an Agro-IBIS parameter file
 \donttest{
 extd.dir <- system.file("extdata", package = "agroibis")
 cpp <- read_crop_parms(file = "params_text.crp", src.dir = extd.dir)
+cpp[["wheat_growth_control"]]
+cpp2 <- edit_parms(cpp, table.name = "wheat_growth_control",
+                   col = 2, row = 1, value = 0.812)
+cpp2[["wheat_growth_control"]]
 }
 
 }
