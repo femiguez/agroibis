@@ -4,12 +4,16 @@
 \alias{edit_parms}
 \title{Edit an Agro-IBIS parameter file}
 \usage{
-edit_parms(crop.parms.lst,
+edit_parms(
+  crop.parms.lst,
   table.name = c("crop_growth_physiology_properties",
-  "crop_growth_leafarea_c_allocation", "climatic_manage_planting_control",
-  "gdd_phenology_control", "wheat_growth_control", "misc_crop_control",
-  "sugarcane_control", "crop_residue_control"), col = NULL, row = NULL,
-  value = 0)
+    "crop_growth_leafarea_c_allocation", "climatic_manage_planting_control",
+    "gdd_phenology_control", "wheat_growth_control", "misc_crop_control",
+    "sugarcane_control", "crop_residue_control"),
+  col = NULL,
+  row = NULL,
+  value = 0
+)
 }
 \arguments{
 \item{crop.parms.lst}{list wth components as produced by 'read_crop_parms'}

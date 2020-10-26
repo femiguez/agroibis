@@ -459,5 +459,5 @@ read_crop_parms <- function(file, src.dir = ".", verbose = TRUE){
   return(crop.parms.lst)
 }
 
-extd.dir <- "../inst/extdata"
-file <- "params_text.crp"
+## extd.dir <- "../inst/extdata"
+## file <- "params_text.crp"
